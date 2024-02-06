@@ -91,5 +91,6 @@ export async function deleteUser(userId:any){
             'Content-Type': 'application/json'
         }
     })
+    
     revalidateTag('users');
 }

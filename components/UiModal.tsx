@@ -12,6 +12,7 @@ export default function UiModal(){
         await addUser(formData);
         toast.success('User Add successfully');
     }
+    
     return (
         <>
             <span className="text-lg text-default-400 cursor-pointer active:opacity-50">
