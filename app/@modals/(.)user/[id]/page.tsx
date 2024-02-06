@@ -15,9 +15,9 @@ const ParalleRender = async ({ params }: { params: any }) => {
 
     return (
         <Model>
-            <div className='w-96 h-auto m-auto  border border-solid border-white bg-[#00000091] rounded-lg py-4 backdrop-blur-[15px] relative'>
+            <div className='sm:w-96 w-80 m-1 h-auto sm:m-auto  border border-solid border-white bg-[#00000091] rounded-lg py-4 backdrop-blur-[15px] relative'>
                 <div className='absolute right-1 top-1'><CancelButton /></div>
-                <form action={upDateUser} className='flex items-center flex-col gap-y-2 px-3'>
+                <form action={upDateUser} className='flex items-center flex-col gap-y-2 px-3 w-full h-full'>
                     <Image src={user.image} width={100} height={100} alt='' priority={true}></Image>
                     <Input type="text" name='name' isRequired variant={"underlined"} label="Name" placeholder="Enter your changed name." defaultValue={user.name} />
                     <Input type="text" name='jobtype' isRequired variant={"underlined"} label="Position" placeholder="Enter your changed job role." defaultValue={user.jobtype} />

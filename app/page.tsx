@@ -7,7 +7,7 @@ export default async function Home() {
   const data = await res.json();
   return (
     <>
-      <div className="w-full h-screen">
+      <div className="w-full h-auto sm:h-screen">
         <UiTable data={data}/>
       </div>
     </>

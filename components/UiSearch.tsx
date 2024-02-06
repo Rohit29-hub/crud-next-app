@@ -7,7 +7,7 @@ const UiSearch = ({handleChange}:{
 
   return (
     <div className="w-full h-auto p-3 flex items-center gap-x-2 justify-center">
-      <Input onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)} className="w-[70%]" type="text" label="Search" placeholder="Search by name.." />
+      <Input onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)} className="w-full sm:w-[70%]" type="text" label="Search" placeholder="Search by name.." />
       <UiModal />
     </div>
   )

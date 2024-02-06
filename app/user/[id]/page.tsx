@@ -7,7 +7,7 @@ const SingleUser = async ({ params }: { params: any }) => {
     return (
         <div className='w-full h-screen' style={{ background: `url(${user.backgroundimg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
             <div className='w-full h-screen grid place-content-center bg-[#ffffff21]'>
-                <div className='w-96 h-auto m-auto  border border-solid border-white bg-[#00000091] rounded-lg py-4 backdrop-blur-[15px] flex items-center flex-col gap-y-2 relative'>
+                <div className='sm:w-96 w-full h-auto m-auto  border border-solid border-white bg-[#00000091] rounded-lg py-4 backdrop-blur-[15px] flex items-center flex-col gap-y-2 relative'>
                     <Image src={user.image} width={100} height={100} alt='' priority={true}></Image>
                     <h1 className='text-3xl font-bold underline'>{user.name}</h1>
                     <p className='text-1xl font-medium'>Position:- {user.jobtype}</p>

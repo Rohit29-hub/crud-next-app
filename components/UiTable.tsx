@@ -27,7 +27,7 @@ const UiTable = ({data}:{
   )
 
   const [page, setPage] = React.useState(1);
-  const rowsPerPage = 7;
+  const rowsPerPage = 5;
   const pages = Math.ceil(optimisticData.length / rowsPerPage);
   const items = React.useMemo(() => {
     const start = (page - 1) * rowsPerPage;
@@ -53,7 +53,7 @@ const UiTable = ({data}:{
       <Table
         aria-label="User Table"
         isStriped
-        className='w-[80%] h-auto p-2 m-auto mt-5'
+        className='w-full sm:w-[80%] h-auto p-2 m-auto'
         bottomContent={
           <div className="flex w-full justify-center">
             <Pagination
@@ -68,7 +68,7 @@ const UiTable = ({data}:{
           </div>
         }
         classNames={{
-          wrapper: "min-h-[222px]",
+          wrapper: "min-h-[200px]",
         }}
       >
         <TableHeader>

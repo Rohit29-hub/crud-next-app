@@ -17,7 +17,7 @@ export default function UiModal(){
         <>
             <span className="text-lg text-default-400 cursor-pointer active:opacity-50">
                 <Tooltip content={"Add User"} color="primary" placement="bottom">
-                    <button className="px-8 py-3 bg-white rounded-md focus:bg-grey-100" onClick={() => onOpen()}><AddIcon /></button>
+                    <button className="px-4 sm:px-8 pt-[0.75rem] pb-[1rem] bg-white rounded-md focus:bg-grey-100 flex items-center justify-center" onClick={() => onOpen()}><AddIcon /></button>
                 </Tooltip>
             </span>
 
